@@ -1,0 +1,16 @@
+{
+  "name": "the-ev-network-platform",
+  "version": "1.0.0",
+  "description": "The EV Network (@the.ev.network) - Autonomous 24/7 electric mobility news and intelligence network inspired by InsideEVs, Reddit r/electricvehicles, The EV Report, BBC, and Formula 1.",
+  "scripts": {
+    "build": "npm --prefix client install && npm --prefix client run build && npm --prefix server install",
+    "start": "node server/server.js",
+    "build:client": "cd client && npm run build",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "test": "node test-e2e.js"
+  },
+  "keywords": ["ev", "electric-vehicles", "the-ev-network", "formula-1", "insideevs", "reddit", "bbc", "multi-agent", "autonomous-agents", "seo", "canva", "newsletter"],
+  "author": "The EV Network",
+  "license": "ISC"
+}

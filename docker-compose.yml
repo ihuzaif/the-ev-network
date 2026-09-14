@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  the-ev-network:
+    build: .
+    container_name: the-ev-network-newsroom
+    restart: always
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+      - NODE_ENV=production
+    volumes:
+      - ./server/data:/app/server/data
